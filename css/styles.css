@@ -337,6 +337,37 @@ html {
     box-shadow: var(--shadow);
 }
 
+#aksp-library .catalog-banner {
+    width: 100%;
+    margin-bottom: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+#aksp-library .catalog-banner__text {
+    flex: 1 1 auto;
+    max-width: 640px;
+}
+
+#aksp-library .catalog-banner__text .tariff-list {
+    margin: 20px 0 0;
+}
+
+#aksp-library .catalog-banner__offer {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 18px;
+    text-align: right;
+}
+
+#aksp-library .catalog-banner__offer .tariff-price {
+    justify-content: flex-end;
+}
+
 #aksp-library .catalog-note {
     margin: 0 0 28px;
     padding: 16px 18px;
@@ -458,7 +489,7 @@ html {
 
 #aksp-library .tariff-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 520px);
     gap: 24px;
     align-items: stretch;
 }
@@ -790,6 +821,27 @@ body.aksp-lock {
 @media (max-width:720px) {
     #aksp-library .container {
         width: min(100% - 24px, 1160px);
+    }
+
+    #aksp-library .catalog-banner {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 24px;
+    }
+
+    #aksp-library .catalog-banner__text {
+        max-width: 100%;
+    }
+
+    #aksp-library .catalog-banner__offer {
+        align-items: stretch;
+        text-align: left;
+    }
+
+    #aksp-library .catalog-banner__offer .tariff-price,
+    #aksp-library .catalog-banner__offer .btn {
+        justify-content: flex-start;
+        width: 100%;
     }
 
     #aksp-library .section {
