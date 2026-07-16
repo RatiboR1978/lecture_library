@@ -1,0 +1,867 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#aksp-library {
+    --blue: #0D74D0;
+    --blue-dark: #0B63B4;
+    --blue-soft: #E4F0FB;
+    --blue-softer: #EEF5FC;
+    --blue-line: #C9DEF3;
+    --amber: #E8963C;
+    --amber-dark: #D6852C;
+    --cream: #FAF8F4;
+    --white: #ffffff;
+    --ink: #1C1B19;
+    --muted: #4C463E;
+    --muted-soft: #6E655C;
+    --line: #E7E0D3;
+    --shadow: 0 22px 60px rgba(28, 27, 25, .10);
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    color: var(--ink);
+    line-height: 1.5;
+    overflow: hidden;
+    background: var(--cream);
+}
+
+#aksp-library * {
+    box-sizing: border-box;
+}
+
+#aksp-library a {
+    color: inherit;
+    text-decoration: none;
+}
+
+#aksp-library button {
+    font: inherit;
+    cursor: pointer;
+}
+
+#aksp-library .container {
+    width: min(1160px, calc(100% - 40px));
+    margin: 0 auto;
+}
+
+#aksp-library .section {
+    padding: 82px 0;
+    position: relative;
+}
+
+#aksp-library .section--light {
+    background: var(--blue-softer);
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+}
+
+#aksp-library .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 16px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: var(--blue-soft);
+    color: var(--blue-dark);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+}
+
+#aksp-library .eyebrow:before {
+    content: "";
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--blue);
+    box-shadow: 0 0 0 6px rgba(13, 116, 208, .14);
+}
+
+#aksp-library h1,
+#aksp-library h2,
+#aksp-library h3,
+#aksp-library p {
+    margin-top: 0;
+}
+
+#aksp-library h1 {
+    margin-bottom: 24px;
+    max-width: 780px;
+    color: var(--blue);
+    font-size: clamp(36px, 4.6vw, 58px);
+    line-height: 1.1;
+    letter-spacing: -.02em;
+    font-weight: 900;
+}
+
+#aksp-library h2 {
+    margin-bottom: 18px;
+    color: var(--ink);
+    font-size: clamp(30px, 3.6vw, 44px);
+    line-height: 1.15;
+    letter-spacing: -.02em;
+    font-weight: 800;
+}
+
+#aksp-library h3 {
+    color: var(--ink);
+    font-weight: 800;
+}
+
+#aksp-library .lead {
+    max-width: 780px;
+    margin-bottom: 30px;
+    color: var(--muted);
+    font-size: clamp(17px, 1.7vw, 19px);
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+#aksp-library .section-head {
+    max-width: 820px;
+    margin-bottom: 38px;
+}
+
+#aksp-library .section-head p {
+    margin-bottom: 0;
+    color: var(--muted);
+    font-size: clamp(17px, 1.7vw, 19px);
+}
+
+#aksp-library .hero {
+    min-height: 640px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding: 46px 0 74px;
+}
+
+#aksp-library .hero:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background: url("../images/hero-fon-biblioteka-lekcii.png") no-repeat center right / cover;
+    pointer-events: none;
+}
+
+#aksp-library .hero:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(to right,
+            rgba(250, 248, 244, .98) 0%,
+            rgba(250, 248, 244, .94) 32%,
+            rgba(250, 248, 244, .6) 52%,
+            rgba(250, 248, 244, .15) 70%,
+            rgba(250, 248, 244, 0) 86%);
+    pointer-events: none;
+}
+
+#aksp-library .hero-inner {
+    position: relative;
+    z-index: 2;
+}
+
+#aksp-library .hero-content {
+    max-width: 640px;
+}
+
+#aksp-library .logo {
+    display: block;
+    width: min(190px, 50vw);
+    height: auto;
+    margin-bottom: 34px;
+}
+
+#aksp-library .hero-prices {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin: 0 0 30px;
+}
+
+#aksp-library .hero-price {
+    padding: 12px 16px;
+    border-radius: 10px;
+    background: var(--white);
+    border: 1px solid var(--line);
+    color: var(--blue-dark);
+    font-weight: 700;
+}
+
+#aksp-library .hero-price s {
+    margin-left: 5px;
+    color: var(--muted-soft);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#aksp-library .actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+#aksp-library .btn {
+    min-height: 60px;
+    padding: 0 32px;
+    border: 0;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    transition: background .15s ease, transform .2s ease, box-shadow .2s ease;
+}
+
+#aksp-library .btn--primary {
+    color: #fff;
+    background: var(--amber);
+    box-shadow: 0 12px 26px rgba(232, 150, 60, .30);
+}
+
+#aksp-library .btn--primary:hover {
+    background: var(--amber-dark);
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 14px 30px rgba(232, 150, 60, .36);
+}
+
+#aksp-library .btn--secondary {
+    color: var(--blue-dark);
+    background: #fff;
+    border: 1px solid var(--blue-line);
+    box-shadow: 0 6px 20px rgba(28, 27, 25, .08);
+}
+
+#aksp-library .btn--secondary:hover {
+    background: var(--blue-soft);
+    transform: translateY(-2px);
+}
+
+#aksp-library .btn--small {
+    min-height: 48px;
+    padding: 0 16px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+#aksp-library .hero-note {
+    margin: 18px 0 0;
+    color: var(--muted-soft);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+#aksp-library .audience-grid,
+#aksp-library .result-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+#aksp-library .info-card {
+    min-height: 220px;
+    padding: 26px;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 6px 22px rgba(28, 27, 25, .06);
+    transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+
+#aksp-library .info-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 44px rgba(13, 116, 208, .14);
+    border-color: var(--blue-line);
+}
+
+#aksp-library .info-card__num {
+    width: 44px;
+    height: 44px;
+    margin-bottom: 18px;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    background: var(--blue-soft);
+    color: var(--blue-dark);
+    font-weight: 800;
+}
+
+#aksp-library .info-card__icon {
+    width: 112px;
+    height: 112px;
+    margin-bottom: 18px;
+    border-radius: 22px;
+    overflow: hidden;
+    background: var(--blue-soft);
+}
+
+#aksp-library .info-card__icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .25s ease;
+}
+
+#aksp-library .info-card:hover .info-card__icon img {
+    transform: scale(1.08) rotate(-3deg);
+}
+
+#aksp-library .info-card h3 {
+    margin-bottom: 11px;
+    font-size: 20px;
+    line-height: 1.22;
+    letter-spacing: -.01em;
+}
+
+#aksp-library .info-card p {
+    margin-bottom: 0;
+    color: var(--muted-soft);
+    font-size: 15.5px;
+    line-height: 1.52;
+}
+
+#aksp-library .catalog-shell {
+    padding: 40px;
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: var(--shadow);
+}
+
+#aksp-library .catalog-note {
+    margin: 0 0 28px;
+    padding: 16px 18px;
+    border-radius: 12px;
+    background: var(--blue-softer);
+    color: var(--blue-dark);
+    font-weight: 600;
+}
+
+#aksp-library .lecture-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+#aksp-library .lecture-card {
+    min-height: 420px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 6px 22px rgba(28, 27, 25, .06);
+    transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+
+#aksp-library .lecture-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 44px rgba(13, 116, 208, .14);
+    border-color: var(--blue-line);
+}
+
+#aksp-library .category {
+    align-self: flex-start;
+    margin-bottom: 17px;
+    padding: 7px 12px;
+    border-radius: 8px;
+    background: var(--blue-soft);
+    color: var(--blue-dark);
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .03em;
+}
+
+#aksp-library .lecture-card h3 {
+    margin: 0 0 12px;
+    font-size: 20px;
+    line-height: 1.23;
+    letter-spacing: -.01em;
+}
+
+#aksp-library .speaker {
+    margin-bottom: 13px;
+    color: var(--blue);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#aksp-library .teaser {
+    margin-bottom: 22px;
+    color: var(--muted-soft);
+    font-size: 15px;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+#aksp-library .card-bottom {
+    margin-top: auto;
+}
+
+#aksp-library .price-row {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 12px;
+    padding-top: 17px;
+    margin-bottom: 15px;
+    border-top: 1px solid var(--line);
+}
+
+#aksp-library .price-box {
+    display: flex;
+    align-items: baseline;
+    gap: 9px;
+    flex-wrap: wrap;
+}
+
+#aksp-library .new-price {
+    color: var(--amber);
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 1;
+}
+
+#aksp-library .old-price {
+    color: var(--muted-soft);
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: line-through;
+}
+
+#aksp-library .access {
+    color: var(--muted-soft);
+    font-size: 12px;
+    text-align: right;
+}
+
+#aksp-library .card-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+#aksp-library .tariff-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    align-items: stretch;
+}
+
+#aksp-library .tariff {
+    padding: 34px;
+    position: relative;
+    border: 1px solid var(--line);
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0 6px 22px rgba(28, 27, 25, .06);
+}
+
+#aksp-library .tariff--featured {
+    border-color: transparent;
+    background: var(--blue);
+    color: #fff;
+}
+
+#aksp-library .tariff h3 {
+    margin: 8px 0 14px;
+    font-size: 28px;
+}
+
+#aksp-library .tariff--featured h3 {
+    color: #fff;
+}
+
+#aksp-library .tariff p {
+    color: var(--muted-soft);
+}
+
+#aksp-library .tariff--featured p {
+    color: rgba(255, 255, 255, .82);
+}
+
+#aksp-library .tariff-price {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 26px 0 8px;
+}
+
+#aksp-library .tariff-price strong {
+    color: var(--amber);
+    font-size: 46px;
+    font-weight: 900;
+    line-height: 1;
+}
+
+#aksp-library .tariff--featured .tariff-price strong {
+    color: #fff;
+}
+
+#aksp-library .tariff-price s {
+    color: var(--muted-soft);
+    font-size: 19px;
+    font-weight: 700;
+}
+
+#aksp-library .tariff--featured .tariff-price s {
+    color: rgba(255, 255, 255, .56);
+}
+
+#aksp-library .tariff-list {
+    list-style: none;
+    padding: 0;
+    margin: 24px 0 29px;
+    display: grid;
+    gap: 12px;
+}
+
+#aksp-library .tariff-list li {
+    display: flex;
+    gap: 10px;
+    color: var(--muted-soft);
+}
+
+#aksp-library .tariff--featured .tariff-list li {
+    color: rgba(255, 255, 255, .86);
+}
+
+#aksp-library .tariff-list li:before {
+    content: "✓";
+    color: var(--amber);
+    font-weight: 900;
+}
+
+#aksp-library .tariff--featured .tariff-list li:before {
+    color: #fff;
+}
+
+#aksp-library .tariff-badge {
+    display: inline-flex;
+    padding: 8px 14px;
+    border-radius: 8px;
+    background: var(--blue-soft);
+    color: var(--blue-dark);
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .03em;
+}
+
+#aksp-library .tariff--featured .tariff-badge {
+    background: rgba(255, 255, 255, .16);
+    color: #fff;
+}
+
+#aksp-library .faq {
+    max-width: 920px;
+    display: grid;
+    gap: 12px;
+}
+
+#aksp-library .faq-item {
+    overflow: hidden;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    background: #fff;
+}
+
+#aksp-library .faq-question {
+    width: 100%;
+    padding: 21px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border: 0;
+    background: transparent;
+    color: var(--ink);
+    font-size: 17px;
+    font-weight: 700;
+    text-align: left;
+}
+
+#aksp-library .faq-question span:last-child {
+    color: var(--blue);
+    font-size: 25px;
+    line-height: 1;
+    transition: .2s ease;
+}
+
+#aksp-library .faq-item.is-open .faq-question span:last-child {
+    transform: rotate(45deg);
+}
+
+#aksp-library .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .28s ease;
+}
+
+#aksp-library .faq-answer>div {
+    padding: 0 24px 23px;
+    color: var(--muted);
+}
+
+#aksp-library .modal {
+    position: fixed;
+    inset: 0;
+    z-index: 999999;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(28, 27, 25, .72);
+    backdrop-filter: blur(7px);
+}
+
+#aksp-library .modal.is-open {
+    display: flex;
+}
+
+#aksp-library .modal-panel {
+    width: min(820px, 100%);
+    max-height: 92vh;
+    overflow: auto;
+    position: relative;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0 30px 90px rgba(0, 0, 0, .28);
+}
+
+#aksp-library .modal-head {
+    padding: 34px 70px 26px 34px;
+    border-bottom: 1px solid var(--line);
+    background: var(--blue-softer);
+}
+
+#aksp-library .modal-head h3 {
+    margin: 13px 0 8px;
+    font-size: clamp(26px, 3.6vw, 38px);
+    line-height: 1.15;
+    letter-spacing: -.015em;
+    color: var(--blue);
+}
+
+#aksp-library .modal-speaker {
+    color: var(--blue);
+    font-weight: 700;
+}
+
+#aksp-library .modal-close {
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    width: 42px;
+    height: 42px;
+    display: grid;
+    place-items: center;
+    border: 0;
+    border-radius: 50%;
+    background: #fff;
+    color: var(--blue-dark);
+    font-size: 29px;
+    line-height: 1;
+    box-shadow: 0 8px 25px rgba(28, 27, 25, .12);
+}
+
+#aksp-library .modal-body {
+    padding: 30px 34px 34px;
+}
+
+#aksp-library .modal-description {
+    white-space: pre-line;
+    color: var(--ink);
+    font-size: 16px;
+    line-height: 1.72;
+}
+
+#aksp-library .speaker-box {
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 14px;
+    background: var(--blue-softer);
+}
+
+#aksp-library .speaker-box strong {
+    display: block;
+    margin-bottom: 7px;
+    color: var(--blue);
+}
+
+#aksp-library .speaker-box p {
+    margin-bottom: 0;
+    color: var(--muted);
+}
+
+#aksp-library .modal-offer {
+    margin-top: 25px;
+    padding-top: 24px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 20px;
+    border-top: 1px solid var(--line);
+}
+
+#aksp-library .modal-price {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#aksp-library .modal-price strong {
+    color: var(--amber);
+    font-size: 30px;
+    font-weight: 900;
+}
+
+#aksp-library .modal-price s {
+    color: var(--muted-soft);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#aksp-library .modal-access {
+    margin-top: 3px;
+    color: var(--muted-soft);
+    font-size: 13px;
+}
+
+html.aksp-lock,
+body.aksp-lock {
+    overflow: hidden !important;
+}
+
+#aksp-library .reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity .7s ease, transform .7s ease;
+}
+
+#aksp-library .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #aksp-library .reveal {
+        transition: none;
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@media (max-width:980px) {
+
+    #aksp-library .audience-grid,
+    #aksp-library .result-grid,
+    #aksp-library .lecture-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    #aksp-library .hero:before {
+        background-position: center;
+        opacity: .35;
+    }
+
+    #aksp-library .hero-content {
+        max-width: 100%;
+    }
+}
+
+@media (max-width:720px) {
+    #aksp-library .container {
+        width: min(100% - 24px, 1160px);
+    }
+
+    #aksp-library .section {
+        padding: 58px 0;
+    }
+
+    #aksp-library .hero {
+        min-height: auto;
+        padding: 28px 0 56px;
+    }
+
+    #aksp-library .logo {
+        width: 140px;
+        margin-bottom: 22px;
+    }
+
+    #aksp-library h1 {
+        font-size: 32px;
+    }
+
+    #aksp-library .actions,
+    #aksp-library .actions .btn {
+        width: 100%;
+    }
+
+    #aksp-library .audience-grid,
+    #aksp-library .result-grid,
+    #aksp-library .lecture-grid,
+    #aksp-library .tariff-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #aksp-library .catalog-shell {
+        padding: 20px;
+        border-radius: 16px;
+    }
+
+    #aksp-library .lecture-card {
+        min-height: auto;
+    }
+
+    #aksp-library .tariff {
+        padding: 27px 23px;
+    }
+
+    #aksp-library .card-actions {
+        grid-template-columns: 1fr;
+    }
+
+    #aksp-library .modal {
+        padding: 8px;
+        align-items: flex-end;
+    }
+
+    #aksp-library .modal-panel {
+        max-height: 94vh;
+        border-radius: 20px 20px 0 0;
+    }
+
+    #aksp-library .modal-head {
+        padding: 28px 58px 22px 22px;
+    }
+
+    #aksp-library .modal-body {
+        padding: 24px 22px 28px;
+    }
+
+    #aksp-library .modal-offer {
+        grid-template-columns: 1fr;
+    }
+
+    #aksp-library .modal-offer .btn {
+        width: 100%;
+    }
+}

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Библиотека лекций Академии краткосрочной стратегической психотерапии: отдельные записи и полный доступ ко всей базе.">
+    <title>Библиотека лекций АКСП</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body style="margin:0;background:#FAF8F4;">
+    <!--
+  КАК НАСТРОИТЬ ОПЛАТУ
+  В самом конце файла найдите объект PAYMENT_LINKS.
+  1. В fullLibrary вставьте ссылку на оплату всей библиотеки.
+  2. Напротив каждой lecture-XX вставьте ссылку на оплату конкретной лекции.
+  Все карточки и кнопки после этого будут работать автоматически.
+-->
+    <div id="aksp-library" class="aksp-library">
+
+        <section class="hero">
+            <div class="container hero-inner reveal">
+                <div class="hero-content">
+                    <img class="logo"
+                        src="images/logo.webp"
+                        alt="Академия краткосрочной стратегической психотерапии">
+                    <div class="eyebrow">Записи лекций Академии</div>
+                    <h1>Выберите лекцию по нужной теме или откройте всю библиотеку</h1>
+                    <p class="lead">
+                        В базе собраны лекции о психологических состояниях, отношениях, кризисах,
+                        телесных процессах и работе психолога. Можно приобрести одну запись или получить
+                        доступ ко всей библиотеке, которая пополняется на 1–2 новые лекции каждый месяц.
+                    </p>
+                    <div class="hero-prices">
+                        <div class="hero-price">Одна лекция — 500 ₽ <s>1 990 ₽</s></div>
+                        <div class="hero-price">Вся библиотека — 3 990 ₽ <s>7 990 ₽</s></div>
+                    </div>
+                    <div class="actions">
+                        <a class="btn btn--primary" href="#lecture-catalog">Выбрать лекцию</a>
+                        <a class="btn btn--secondary js-full-buy" href="#">Приобрести библиотеку</a>
+                    </div>
+                    <p class="hero-note">Доступ к отдельной лекции открывается на 1 месяц,<br>ко всей библиотеке — на 3 месяца.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--light">
+            <div class="container">
+                <div class="section-head reveal">
+                    <div class="eyebrow">Для кого</div>
+                    <h2>Лекции, к которым можно возвращаться в работе и обучении</h2>
+                    <p>Выбирайте конкретную тему под текущую задачу или изучайте библиотеку последовательно.</p>
+                </div>
+                <div class="audience-grid">
+                    <article class="info-card reveal">
+                        <div class="info-card__icon"><img src="images/beginner-psychologists.png" alt="" loading="lazy"></div>
+                        <h3>Начинающим психологам</h3>
+                        <p>Чтобы углубить понимание частых клиентских запросов, увидеть профессиональную логику разбора
+                            темы и увереннее готовиться к практике.</p>
+                    </article>
+                    <article class="info-card reveal">
+                        <div class="info-card__icon"><img src="images/practicing-specialists.png" alt="" loading="lazy"></div>
+                        <h3>Практикующим специалистам</h3>
+                        <p>Чтобы освежить знания, дополнить рабочие инструменты и посмотреть на знакомые запросы через
+                            опыт преподавателей Академии.</p>
+                    </article>
+                    <article class="info-card reveal">
+                        <div class="info-card__icon"><img src="images/psychology-for-self-study.png" alt="" loading="lazy"></div>
+                        <h3>Тем, кто изучает психологию</h3>
+                        <p>Чтобы лучше понимать механизмы эмоций, отношений и поведения без необходимости сразу покупать
+                            большую образовательную программу.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-head reveal">
+                    <div class="eyebrow">Результат</div>
+                    <h2>Что дают лекции</h2>
+                    <p>Каждая запись посвящена отдельной теме и помогает собрать более ясное понимание происходящего с
+                        человеком.</p>
+                </div>
+                <div class="result-grid">
+                    <article class="info-card reveal">
+                        <div class="info-card__icon"><img src="images/understanding-mechanisms.png" alt="" loading="lazy"></div>
+                        <h3>Понимание механизма</h3>
+                        <p>Вы разберётесь, что может стоять за тревогой, агрессией, обидой, выгоранием, зависимыми
+                            отношениями и другими состояниями.</p>
+                    </article>
+                    <article class="info-card reveal">
+                        <div class="info-card__icon"><img src="images/practice-guidance.png" alt="" loading="lazy"></div>
+                        <h3>Ориентиры для практики</h3>
+                        <p>Увидите вопросы, подходы и инструменты, которые можно учитывать при подготовке к
+                            консультациям и разборе клиентских случаев.</p>
+                    </article>
+                    <article class="info-card reveal">
+                        <div class="info-card__icon"><img src="images/flexible-learning-format.png" alt="" loading="lazy"></div>
+                        <h3>Удобный формат изучения</h3>
+                        <p>Смотрите записи в подходящее время и возвращайтесь к отдельным фрагментам в течение всего
+                            периода доступа.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="lecture-catalog" class="section section--light">
+            <div class="container">
+                <div class="section-head reveal">
+                    <div class="eyebrow">Каталог</div>
+                    <h2>Все лекции библиотеки</h2>
+                    <p>Нажмите «Подробнее», чтобы открыть полное описание, или сразу перейдите к покупке выбранной
+                        записи.</p>
+                </div>
+                <div class="catalog-shell reveal">
+                    <div class="catalog-note">
+                        В библиотеке доступно больше 30 лекций. Выберите интересующую тему и откройте подробное описание
+                        или сразу перейдите к покупке.
+                    </div>
+                    <div id="lecture-grid" class="lecture-grid"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-head reveal">
+                    <div class="eyebrow">Формат доступа</div>
+                    <h2>Выберите одну лекцию или всю библиотеку</h2>
+                    <p>Отдельные записи оформляются по одной. Для доступа ко всем темам предусмотрен единый тариф.</p>
+                </div>
+                <div class="tariff-grid">
+                    <article class="tariff reveal">
+                        <div class="tariff-badge">Одна выбранная тема</div>
+                        <h3>Отдельная лекция</h3>
+                        <p>Подходит, когда сейчас нужна конкретная тема и вы не планируете изучать всю базу.</p>
+                        <div class="tariff-price">
+                            <strong>500 ₽</strong>
+                            <s>1 990 ₽</s>
+                        </div>
+                        <ul class="tariff-list">
+                            <li>одна выбранная запись</li>
+                            <li>доступ на 1 месяц</li>
+                            <li>покупка прямо из карточки лекции</li>
+                        </ul>
+                        <a class="btn btn--secondary" href="#lecture-catalog">Выбрать лекцию</a>
+                    </article>
+
+                    <article class="tariff tariff--featured reveal">
+                        <div class="tariff-badge">Вся база и новые записи</div>
+                        <h3>Полная библиотека</h3>
+                        <p>Подходит, когда вы хотите изучать разные направления и получать новые лекции в течение
+                            периода доступа.</p>
+                        <div class="tariff-price">
+                            <strong>3 990 ₽</strong>
+                            <s>7 990 ₽</s>
+                        </div>
+                        <ul class="tariff-list">
+                            <li>больше 30 лекций, доступных сразу</li>
+                            <li>1–2 новые записи каждый месяц</li>
+                            <li>доступ на 3 месяца</li>
+                        </ul>
+                        <a class="btn btn--primary js-full-buy" href="#">Приобрести библиотеку</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--light">
+            <div class="container">
+                <div class="section-head reveal">
+                    <div class="eyebrow">Вопросы</div>
+                    <h2>Частые вопросы</h2>
+                </div>
+                <div class="faq">
+                    <div class="faq-item reveal">
+                        <button class="faq-question" type="button">
+                            <span>На какой срок открывается доступ?</span><span>+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div>К отдельной лекции доступ предоставляется на 1 месяц с момента оплаты. Ко всей
+                                библиотеке — на 3 месяца.</div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal">
+                        <button class="faq-question" type="button">
+                            <span>Можно ли купить несколько отдельных лекций?</span><span>+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div>На этой странице каждая лекция оформляется как отдельная покупка за 500 ₽. Если вам
+                                нужны разные темы, выгоднее рассмотреть полный доступ ко всей библиотеке за 3 990 ₽.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal">
+                        <button class="faq-question" type="button">
+                            <span>Что входит в полный доступ?</span><span>+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div>Все записи, представленные в каталоге, а также новые лекции, которые будут добавлены в
+                                течение ваших 3 месяцев доступа к библиотеке.</div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal">
+                        <button class="faq-question" type="button">
+                            <span>Как часто появляются новые лекции?</span><span>+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div>Библиотека пополняется в среднем на 1–2 новые записи каждый месяц.</div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal">
+                        <button class="faq-question" type="button">
+                            <span>Где находится полное описание лекции?</span><span>+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div>Нажмите кнопку «Подробнее» в карточке. Откроется окно с содержанием лекции, информацией
+                                о преподавателе, стоимостью и кнопкой покупки.</div>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal">
+                        <button class="faq-question" type="button">
+                            <span>Можно ли смотреть записи с телефона?</span><span>+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <div>Да, записи можно изучать с компьютера, планшета или смартфона.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="lecture-modal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+            <div class="modal-panel" role="document">
+                <button class="modal-close" type="button" aria-label="Закрыть окно">×</button>
+                <div class="modal-head">
+                    <div id="modal-category" class="category"></div>
+                    <h3 id="modal-title"></h3>
+                    <div id="modal-speaker" class="modal-speaker"></div>
+                </div>
+                <div class="modal-body">
+                    <div id="modal-description" class="modal-description"></div>
+                    <div class="speaker-box">
+                        <strong>О преподавателе</strong>
+                        <p id="modal-bio"></p>
+                    </div>
+                    <div class="modal-offer">
+                        <div>
+                            <div class="modal-price">
+                                <strong>500 ₽</strong>
+                                <s>1 990 ₽</s>
+                            </div>
+                            <div class="modal-access">Доступ к записи на 1 месяц</div>
+                        </div>
+                        <a id="modal-buy" class="btn btn--primary" href="#">Купить лекцию</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/script.js"></script>
+    </div>
+</body>
+
+</html>
